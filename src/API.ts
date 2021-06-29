@@ -10,7 +10,7 @@ export type Question = {
 } 
 
 export type QuestionState = Question & {
-    answers: string[];
+    answer: string[];
 }
 
 export enum Difficulty {
