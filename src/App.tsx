@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import QuestionCard from './components/QuestionCard';
 import { fetchQuizQuestions } from './API';
 import { QuestionState, Difficulty } from './API';
-import { GlobalStyle, Wrapper } from './App.styles';
+import { Footer, GlobalStyle, Wrapper } from './App.styles';
 
 export type AnswerObject = {
   question: string;
@@ -89,6 +89,10 @@ const App = () => {
         <button className="next" onClick={nextQuestion}>Next Question</button>
       ) : null }
     </Wrapper>
+    <Footer>
+      <p>Created by <a href="http://github.com/gfirik">gfirik</a>!</p>
+      <p>2021</p>
+    </Footer>
     </>
   );
 };

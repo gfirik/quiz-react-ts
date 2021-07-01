@@ -68,3 +68,23 @@ export const Wrapper = styled.div`
         max-width: 200px;
     }
 `;
+
+export const Footer = styled.div`
+    width: 100%;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    margin-top: 15rem;
+    p {
+        font-size:15px;
+        a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            &:hover {
+                font-size: 15px;
+            }
+        }
+    }
+`;
